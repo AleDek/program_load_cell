@@ -1,0 +1,71 @@
+// #include "I2C.h"
+// #include "ThisThread.h"
+// #include "mbed.h"
+// #include "ZSC31014.h"
+// #include <cstdint>
+// #include <cstdio>
+
+
+// #define  GAIN      x192   //1.5 - 3 - 6 - 12 - 24 - 48 - 96 - 192
+// #define New_address 0x33
+
+// using namespace metromotive;
+
+// DigitalOut enable(PA_8); // The GPIO that you use to power the IC.
+// I2C i2c(PB_7, PB_6); // The I2C bus SDA/SCL pins.
+// char i2cAddress = 0x28;
+// ZSC31014 DYMH(i2c, i2cAddress, enable); // The ZSC31014 IC, using the default address.
+
+// Serial pc(USBTX, USBRX, 115200);
+
+// int main()
+// {   enable =0;
+//     thread_sleep_for(1000);
+//     i2c.frequency(400000);
+
+//     DYMH.setup(New_address);
+//     enable =1;
+//     thread_sleep_for(5000);
+    
+
+//     float gain = 1.00;
+//     float offset = 0.00;
+    
+//     DYMH.set_linear_calib(gain, offset);
+
+//     DYMH.reset_bias(20, true);
+
+//     uint16_t r =0;
+//     float v = 0.00;
+
+//     while(1) {
+    
+//         r = DYMH.read_raw();
+//         v = DYMH.read_corrected();
+
+//         printf("Raw Data:  %d \n", r);
+//         printf("Corrected Data:  %f \n", v);
+
+//         // printf("\nNew Address = 0x%3x \n",New_address);
+//      // rtos::ThisThread::sleep_for(10ms);
+//         wait(0.1);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
